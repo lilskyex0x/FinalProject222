@@ -76,7 +76,7 @@ public final class CourseOffering {
 
   public boolean hasSeatAvailable() {
     if (seatLimit == 0) {
-      return true; // treat 0 as unlimited for simplicity
+      return true; 
     }
     return enrolledStudentIds.size() < seatLimit;
   }
